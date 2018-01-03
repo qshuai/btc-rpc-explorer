@@ -36,13 +36,15 @@ html
 									a(href="/terminal", class="nav-link") RPC Terminal
 							li(class="nav-item")
 								a(href="/node-info", class="nav-link") Node Info
-							li(class="nav-item")
-								a(href="/mempool", class="nav-link") Mempool Info
+							//-
+								li(class="nav-item")
+									a(href="/mempool", class="nav-link") Mempool Info
+							//
 						form(method="post", action="/search", class="form-inline")
 							div(class="input-group")
 								input(type="text", class="form-control form-control-sm", name="query", placeholder="block height, block hash, txid", style="width: 250px;")
 								span(class="input-group-btn")
-									input(type="submit", class="btn btn-primary", value="Search")
+									input(type="submit", class="btn btn-success", value="Search")
 			
 		div(class="container")
 			if (userMessage)
@@ -51,7 +53,7 @@ html
 			
 			block content
 
-			div(style="margin-bottom: 30px;")
+			// div(style="margin-bottom: 30px;")
 
 		script(src="https://code.jquery.com/jquery-3.2.1.min.js", integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=", crossorigin="anonymous")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js", integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh", crossorigin="anonymous")

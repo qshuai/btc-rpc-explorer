@@ -5,12 +5,12 @@ module.exports = {
 	// Uncomment "bitcoind" below to automatically connect via RPC.
 	// Otherwise, you can manually connect via the UI.
 
-	//bitcoind:{
-	//	host:"192.168.1.100",
-	//	port:8332,
-	//	rpc: {
-	//		username:"username",
-	//		password:"password"
-	//	}
-	//}
+	bitcoind:{
+		host:"127.0.0.1",
+		port:8398,
+		rpc: {
+			username:"rpc",
+			password:"g6eJ6ZLCiws7mc0SVwlWhI7h4ve5yH"
+		}
+	}
 };
